@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">勤怠管理</string>
+    <string name="user_menu">ユーザー情報管理</string>
+    <string name="touch_IC_card">ICカードをタッチしてください</string>
+    <string name="new_user">新規ユーザー登録</string>
+    <string name="register">登録</string>
+</resources>
