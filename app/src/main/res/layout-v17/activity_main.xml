@@ -44,6 +44,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/touch_IC_card"
         android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@dimen/input_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
