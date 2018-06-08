@@ -10,4 +10,5 @@
     <string name="icCardReader">ICカード読み取り</string>
     <string name="password">パスワード</string>
     <string name="mail">メールアドレス</string>
+    <string name="complete">完了</string>
 </resources>

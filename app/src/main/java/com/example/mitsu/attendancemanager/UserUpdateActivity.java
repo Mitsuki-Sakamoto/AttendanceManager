@@ -9,6 +9,24 @@ import android.view.View;
 
 public class UserUpdateActivity extends AppCompatActivity {
 
+    private View.OnClickListener buttonClick = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent;
+            switch (v.getId()) {
+                case R.id.icCardReader:
+                    intent = new Intent(UserUpdateActivity.this, CardReaderActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.update:
+                    intent = new Intent(UserUpdateActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    break;
+            }
+
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,15 +34,9 @@ public class UserUpdateActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         View view = findViewById(R.id.update);
-        view.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(UserUpdateActivity.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(intent);
-            }
-        });
+        view.setOnClickListener(buttonClick);
+        view = findViewById(R.id.icCardReader);
+        view.setOnClickListener(buttonClick);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
