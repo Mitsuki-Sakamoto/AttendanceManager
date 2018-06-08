@@ -20,6 +20,8 @@ public class UserUpdateActivity extends AppCompatActivity {
                     break;
                 case R.id.update:
                     intent = new Intent(UserUpdateActivity.this, MainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     startActivity(intent);
                     break;
             }

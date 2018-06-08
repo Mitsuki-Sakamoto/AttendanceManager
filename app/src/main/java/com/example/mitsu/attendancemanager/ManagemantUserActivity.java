@@ -20,7 +20,7 @@ public class ManagemantUserActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 default:
-                    alert("ユーザー編集","坂本　充生");
+                    alert("ユーザー編集","氏名");
                     break;
             }
 
@@ -78,6 +78,14 @@ public class ManagemantUserActivity extends AppCompatActivity {
         view = findViewById(R.id.new_user);
         view.setOnClickListener(buttonClick);
         view = findViewById(R.id.user1);
+        view.setOnClickListener(buttonClick);
+        view = findViewById(R.id.user2);
+        view.setOnClickListener(buttonClick);
+        view = findViewById(R.id.user3);
+        view.setOnClickListener(buttonClick);
+        view = findViewById(R.id.user4);
+        view.setOnClickListener(buttonClick);
+        view = findViewById(R.id.user5);
         view.setOnClickListener(buttonClick);
     }
 
