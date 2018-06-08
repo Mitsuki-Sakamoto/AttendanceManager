@@ -7,19 +7,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class UserRegistrationActivity extends AppCompatActivity {
+public class UserUpdateActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_registration);
+        setContentView(R.layout.activity_user_update);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        View view = findViewById(R.id.register);
+        View view = findViewById(R.id.update);
         view.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(UserRegistrationActivity.this, MainActivity.class);
+                Intent intent = new Intent(UserUpdateActivity.this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);

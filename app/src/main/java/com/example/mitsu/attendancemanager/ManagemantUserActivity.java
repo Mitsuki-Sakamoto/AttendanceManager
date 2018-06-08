@@ -20,22 +20,40 @@ public class ManagemantUserActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 default:
-                    Alert("name","坂本　充生");
+                    alert("ユーザー編集","坂本　充生");
                     break;
             }
 
         }
     };
-
-    private void Alert(String a,String b){
+    private void alert(String a){
         AlertDialog.Builder alertDlg = new AlertDialog.Builder(ManagemantUserActivity.this);
-        if(a!=null)alertDlg.setTitle(a);
+        alertDlg.setMessage(a);
+        alertDlg.setPositiveButton(
+                "OK",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // OK ボタンクリック処理
+                    }
+                });
+        alertDlg.setNegativeButton(
+                "キャンセル",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+        alertDlg.setCancelable(true);
+        alertDlg.create().show();
+    }
+    private void alert(String a,String b){
+        AlertDialog.Builder alertDlg = new AlertDialog.Builder(ManagemantUserActivity.this);
+        alertDlg.setTitle(a);
         alertDlg.setMessage(b);
         alertDlg.setPositiveButton(
                 "削除",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        // OK ボタンクリック処理
+                        alert("削除しますか");
                     }
                 });
         alertDlg.setNegativeButton(
@@ -47,6 +65,7 @@ public class ManagemantUserActivity extends AppCompatActivity {
                     }
                 });
         // 表示
+        alertDlg.setCancelable(true);
         alertDlg.create().show();
     }
 

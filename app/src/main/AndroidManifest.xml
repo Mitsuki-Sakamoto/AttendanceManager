@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ManagemantUserActivity" />
-        <activity android:name=".UserRegistrationActivity"></activity>
+        <activity android:name=".UserRegistrationActivity" />
+        <activity android:name=".UserUpdateActivity" />
+        <activity android:name=".CardReaderActivity"></activity>
     </application>
 
 </manifest>

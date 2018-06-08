@@ -4,4 +4,10 @@
     <string name="touch_IC_card">ICカードをタッチしてください</string>
     <string name="new_user">新規ユーザー登録</string>
     <string name="register">登録</string>
+    <string name="update">更新</string>
+    <string name="exname">坂本充生</string>
+    <string name="name">氏名</string>
+    <string name="icCardReader">ICカード読み取り</string>
+    <string name="password">パスワード</string>
+    <string name="mail">メールアドレス</string>
 </resources>
